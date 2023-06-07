@@ -36,7 +36,7 @@ function Sidebar() {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/---------" className="text-light">
+          <Nav.Link href="/ManageTeacher" className="text-light">
             <img
               src={course}
               alt="Teacher"

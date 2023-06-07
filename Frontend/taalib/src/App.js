@@ -20,6 +20,11 @@ import AcaOffDelete from "./components/pages/AcademicOfficer/delete";
 import EditAcaOfficer from "./components/pages/AcademicOfficer/editAcaOfficer";
 import ViewAcaOfficer from "./components/pages/AcademicOfficer/viewAcaOfficer";
 
+///////////////////////////////////////////////////////////////////////////////////////////
+import ManageTeacher from "./components/pages/Teacher/TeachermanageScreen";
+import RegisterTeacher from "./components/pages/Teacher/registerTeacher";
+import TeacherInfo from "./components/pages/Teacher/TeacherInfo";
+
 function App() {
   return (
     <BrowserRouter>
@@ -81,7 +86,18 @@ function App() {
           path="/ManageAcaOfficer/viewAcaOfficer/SearchResult"
           element={<AcaOffInfo />}
         />
+///////////////////////////////////////////////////////////////////////////////////////
+        <Route path="/ManageTeacher" element={<ManageTeacher />} />
 
+        <Route
+          path="/ManageTeacher/registerTeacher"
+          element={<RegisterTeacher />}
+        />
+
+        <Route
+          path="/ManageTeacher/RegisterTeacher/TeacherInfo"
+          element={<TeacherInfo />}
+        />
       </Routes>
     </BrowserRouter>
   );
