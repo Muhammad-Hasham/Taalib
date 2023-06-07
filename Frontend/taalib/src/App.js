@@ -11,7 +11,7 @@ import AccOffDelete from "./components/pages/AccountOfficer/delete";
 import EditAccOfficer from "./components/pages/AccountOfficer/editAccOfficer";
 import ViewAccOfficer from "./components/pages/AccountOfficer/viewAccOfficer";
 
-///////////////////////////////////////////////////////////////////////////////////////////
+
 import ManageAcaOfficer from "./components/pages/AcademicOfficer/AcaOffmanageScreen";
 import RegisterAcaOfficer from "./components/pages/AcademicOfficer/registerAcaOfficer";
 import AcaOffInfo from "./components/pages/AcademicOfficer/AcaOffInfo";
@@ -20,7 +20,7 @@ import AcaOffDelete from "./components/pages/AcademicOfficer/delete";
 import EditAcaOfficer from "./components/pages/AcademicOfficer/editAcaOfficer";
 import ViewAcaOfficer from "./components/pages/AcademicOfficer/viewAcaOfficer";
 
-///////////////////////////////////////////////////////////////////////////////////////////
+
 import ManageTeacher from "./components/pages/Teacher/TeachermanageScreen";
 import RegisterTeacher from "./components/pages/Teacher/registerTeacher";
 import TeacherInfo from "./components/pages/Teacher/TeacherInfo";
@@ -62,7 +62,8 @@ function App() {
           path="/ManageAccOfficer/viewAccOfficer/SearchResult"
           element={<AccOffInfo />}
         />
-///////////////////////////////////////////////////////////////////////////////////////
+
+
         <Route path="/ManageAcaOfficer" element={<ManageAcaOfficer />} />
 
         <Route
@@ -90,7 +91,8 @@ function App() {
           path="/ManageAcaOfficer/viewAcaOfficer/SearchResult"
           element={<AcaOffInfo />}
         />
-///////////////////////////////////////////////////////////////////////////////////////
+
+
         <Route path="/ManageTeacher" element={<ManageTeacher />} />
 
         <Route

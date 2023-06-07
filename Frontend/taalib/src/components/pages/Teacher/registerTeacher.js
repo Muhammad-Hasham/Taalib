@@ -4,7 +4,6 @@ import SideBar from "../sideBar";
 import TeacherForm from "./TeacherForm";
 
 function RegisterTeacher() {
-  const user = JSON.parse(localStorage.getItem("user"));
 
   return (
     <div>

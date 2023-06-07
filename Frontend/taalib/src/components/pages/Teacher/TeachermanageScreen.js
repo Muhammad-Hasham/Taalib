@@ -34,6 +34,7 @@ function ManageTeacher() {
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={reglogo}
+                      alt="Register Teacher"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -56,6 +57,7 @@ function ManageTeacher() {
                         height: 100,
                       }}
                       src={editlogo}
+                      alt="Edit Teacher Info"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -71,12 +73,13 @@ function ManageTeacher() {
               <div className="row">
                 <div
                   className="col-md-4"
-                  onClick={()=>navigate("/ManageTeacher/DeleteTeacher")}
+                  onClick={() => navigate("/ManageTeacher/DeleteTeacher")}
                 >
                   <div className="card card-custom">
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={deleteLogo}
+                      alt="Remove Teacher"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -99,6 +102,7 @@ function ManageTeacher() {
                         height: 100,
                       }}
                       src={viewLogo}
+                      alt="Find a Teacher"
                       className="card-img-top"
                     />
                     <div className="card-body">

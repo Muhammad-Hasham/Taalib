@@ -3,7 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function TeacherForm() {
-  const [teachers, setTeachers] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
     const getTeachers = async () => {
@@ -11,13 +10,12 @@ function TeacherForm() {
         let token = localStorage.getItem("user");
         token = JSON.parse(token);
         token = token.token
-        const response = await axios.get(
+        await axios.get(
           "http://localhost:3001/api/teacher/allteachers",
           {
             headers: { Authorization: token },
           }
         );
-        setTeachers(response.data);
       } catch (error) {
         console.log(error);
       }

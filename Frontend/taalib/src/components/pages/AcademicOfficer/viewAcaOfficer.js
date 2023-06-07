@@ -4,7 +4,6 @@ import SideBar from "../sideBar";
 import SearchForm from "./searchForm"; 
 
 function ViewAcaOfficer() {
-  const user = JSON.parse(localStorage.getItem("user"));
 
   return (
     <div>

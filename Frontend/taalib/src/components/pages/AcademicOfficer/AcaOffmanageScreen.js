@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../nav";
 import SideBar from "../sideBar";
-import "../../css/manageAccOfficer.css";//sus
+import "../../css/manageAccOfficer.css";
 import reglogo from "../../images/new.png";
 import editlogo from "../../images/edit.png";
 import deleteLogo from "../../images/delete.png";
@@ -34,6 +34,7 @@ function ManageAcaOfficer() {
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={reglogo}
+                      alt="Register Academic Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -56,6 +57,7 @@ function ManageAcaOfficer() {
                         height: 100,
                       }}
                       src={editlogo}
+                      alt="Edit Academic Officer Info"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -71,12 +73,13 @@ function ManageAcaOfficer() {
               <div className="row">
                 <div
                   className="col-md-4"
-                  onClick={()=>navigate("/ManageAcaOfficer/DeleteAcaOfficer")}
+                  onClick={() => navigate("/ManageAcaOfficer/DeleteAcaOfficer")}
                 >
                   <div className="card card-custom">
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={deleteLogo}
+                      alt="Remove Academic Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -99,6 +102,7 @@ function ManageAcaOfficer() {
                         height: 100,
                       }}
                       src={viewLogo}
+                      alt="Find an Academic Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">

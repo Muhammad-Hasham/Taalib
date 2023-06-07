@@ -34,6 +34,7 @@ function ManageAccOfficer() {
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={reglogo}
+                      alt="Register Account Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -56,6 +57,7 @@ function ManageAccOfficer() {
                         height: 100,
                       }}
                       src={editlogo}
+                      alt="Edit Account Officer Info"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -71,12 +73,13 @@ function ManageAccOfficer() {
               <div className="row">
                 <div
                   className="col-md-4"
-                  onClick={()=>navigate("/ManageAccOfficer/DeleteAccOfficer")}
+                  onClick={() => navigate("/ManageAccOfficer/DeleteAccOfficer")}
                 >
                   <div className="card card-custom">
                     <img
                       style={{ paddingTop: 10, width: 100, height: 100 }}
                       src={deleteLogo}
+                      alt="Remove Account Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">
@@ -99,6 +102,7 @@ function ManageAccOfficer() {
                         height: 100,
                       }}
                       src={viewLogo}
+                      alt="Find an Account Officer"
                       className="card-img-top"
                     />
                     <div className="card-body">

@@ -4,7 +4,6 @@ import SideBar from "../sideBar";
 import EditForm from "./editform";
 
 function EditAcaOfficer() {
-  const user = JSON.parse(localStorage.getItem("user"));
 
   return (
     <div>

@@ -4,8 +4,6 @@ import SideBar from "../sideBar";
 import AcaOfficerForm from "./AcaOfficerForm";
 
 function RegisterAcaOfficer() {
-  const user = JSON.parse(localStorage.getItem("user"));
-
   return (
     <div>
       <NavBar />

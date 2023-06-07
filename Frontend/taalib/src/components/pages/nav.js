@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/logout.png";
 import "../css/nav.css";
 
@@ -9,7 +10,9 @@ function NavBar() {
         className="navbar navbar-expand-lg navbar-dark bg-dark"
         style={{ height: "100%" }}
       >
-        <h1 className="garamond-text logo">Taalib</h1>
+        <Link to="/Home" className="garamond-text logo">
+          Taalib
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,12 +29,12 @@ function NavBar() {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <a className="nav-item nav-link active garamond-text" href="/">
+            <Link to="/" className="nav-item nav-link active garamond-text">
               <div className="garamond-text">
                 <h4>Logout</h4>
                 <img src={logo} alt="Logout" className="logout-image" />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

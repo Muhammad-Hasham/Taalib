@@ -3,21 +3,20 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function AcaOfficerForm() {
-  const [acaOfficers, setAcaOfficers] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
     const getAcaOfficers = async () => {
       try {
         let token = localStorage.getItem("user");
         token = JSON.parse(token);
-        token = token.token
+        token = token.token;
         const response = await axios.get(
           "http://localhost:3001/api/academicOfficer/allacademicofficers",
           {
             headers: { Authorization: token },
           }
         );
-        setAcaOfficers(response.data);
+        // setAcaOfficers(response.data); // Removed unused variable
       } catch (error) {
         console.log(error);
       }
