@@ -27,6 +27,7 @@ import TeacherInfo from "./components/pages/Teacher/TeacherInfo";
 import DeleteTeacher from "./components/pages/Teacher/DeleteTeacher";
 import TeacherDelete from "./components/pages/Teacher/delete";
 import EditTeacher from "./components/pages/Teacher/editTeacher";
+import ViewTeacher from "./components/pages/Teacher/viewTeacher";
 
 function App() {
   return (
@@ -111,6 +112,13 @@ function App() {
           path="/ManageTeacher/EditTeacher/TeacherInfo"
           element={<TeacherInfo />}
         />
+
+        <Route path="/ManageTeacher/viewTeacher" element={<ViewTeacher />} />
+        <Route
+          path="/ManageTeacher/viewTeacher/SearchResult"
+          element={<TeacherInfo />}
+        />
+        
       </Routes>
     </BrowserRouter>
   );
