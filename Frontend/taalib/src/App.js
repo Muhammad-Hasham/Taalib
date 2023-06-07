@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginForm from "./components/pages/login";
 import Home from "./components/pages/home";
+
 import ManageAccOfficer from "./components/pages/AccountOfficer/AccOffmanageScreen";
 import RegisterAccOfficer from "./components/pages/AccountOfficer/registerAccOfficer";
 import AccOffInfo from "./components/pages/AccountOfficer/AccOffInfo";
@@ -9,6 +10,10 @@ import DeleteAccOfficer from "./components/pages/AccountOfficer/DeleteAccOfficer
 import AccOffDelete from "./components/pages/AccountOfficer/delete";
 import EditAccOfficer from "./components/pages/AccountOfficer/editAccOfficer";
 import ViewAccOfficer from "./components/pages/AccountOfficer/viewAccOfficer";
+
+import ManageAcaOfficer from "./components/pages/AcademicOfficer/AcaOffmanageScreen";
+import RegisterAcaOfficer from "./components/pages/AcademicOfficer/registerAcaOfficer";
+import AcaOffInfo from "./components/pages/AcademicOfficer/AcaOffInfo";
 
 function App() {
   return (
@@ -42,6 +47,18 @@ function App() {
         <Route
           path="/ManageAccOfficer/viewAccOfficer/SearchResult"
           element={<AccOffInfo />}
+        />
+///////////////////////////////////////////////////////////////////////////////////////
+        <Route path="/ManageAcaOfficer" element={<ManageAcaOfficer />} />
+
+        <Route
+          path="/ManageAcaOfficer/registerAcaOfficer"
+          element={<RegisterAcaOfficer />}
+        />
+
+        <Route
+          path="/ManageAcaOfficer/RegisterAcaOfficer/AcaOffInfo"
+          element={<AcaOffInfo />}
         />
 
       </Routes>

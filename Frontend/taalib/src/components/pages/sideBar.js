@@ -12,7 +12,7 @@ function Sidebar() {
       <br></br>
       <Nav defaultActiveKey="/" className="flex-column">
         <Nav.Item style={{ paddingBottom: 10 }}>
-          <Nav.Link href="/----------------" className="text-light">
+          <Nav.Link href="/ManageAcaOfficer" className="text-light">
             <img
               src={pro}
               alt="Academic"

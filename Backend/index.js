@@ -26,7 +26,7 @@ mongoose
   });
 
 app.use("/api/superadmin", superAdminRoutes);
-app.use("/api/academicofficer", academicOfficerRoutes);
+app.use("/api/academicOfficer", academicOfficerRoutes);
 app.use("/api/accountOfficer", accountOfficerRoutes);
 app.use("/api/teacher", teacherRoutes);
 
