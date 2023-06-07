@@ -14,7 +14,7 @@ function Home() {
           <div className="col-md-2">
             <SideBar />
           </div>
-          <div className="col-md-10" style={{ position: 'relative', height: '100%' }}>
+          <div className="col-md-10" style={{ position: 'absolute', height: '100%', left: '213px' }}>
             <h1
               className="display-4 font-weight-bold"
               style={{
