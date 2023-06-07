@@ -24,6 +24,8 @@ import ViewAcaOfficer from "./components/pages/AcademicOfficer/viewAcaOfficer";
 import ManageTeacher from "./components/pages/Teacher/TeachermanageScreen";
 import RegisterTeacher from "./components/pages/Teacher/registerTeacher";
 import TeacherInfo from "./components/pages/Teacher/TeacherInfo";
+import DeleteTeacher from "./components/pages/Teacher/DeleteTeacher";
+import TeacherDelete from "./components/pages/Teacher/delete";
 
 function App() {
   return (
@@ -98,6 +100,10 @@ function App() {
           path="/ManageTeacher/RegisterTeacher/TeacherInfo"
           element={<TeacherInfo />}
         />
+
+        <Route path="/ManageTeacher/DeleteTeacher" element={<DeleteTeacher />} />
+        <Route path="/ManageTeacher/DeleteTeacher/TeacherInfo" element={<TeacherDelete />} />
+
       </Routes>
     </BrowserRouter>
   );
