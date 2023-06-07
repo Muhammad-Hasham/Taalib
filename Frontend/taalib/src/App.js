@@ -17,6 +17,8 @@ import RegisterAcaOfficer from "./components/pages/AcademicOfficer/registerAcaOf
 import AcaOffInfo from "./components/pages/AcademicOfficer/AcaOffInfo";
 import DeleteAcaOfficer from "./components/pages/AcademicOfficer/DeleteAcaOfficer";
 import AcaOffDelete from "./components/pages/AcademicOfficer/delete";
+import EditAcaOfficer from "./components/pages/AcademicOfficer/editAcaOfficer";
+//import ViewAcaOfficer from "./components/pages/AcademicOfficer/viewAcaOfficer";
 
 function App() {
   return (
@@ -66,6 +68,19 @@ function App() {
 
         <Route path="/ManageAcaOfficer/DeleteAcaOfficer" element={<DeleteAcaOfficer />} />
         <Route path="/ManageAcaOfficer/DeleteAcaOfficer/AcaOffInfo" element={<AcaOffDelete />} />
+
+        <Route path="/ManageAcaOfficer/EditAcaOfficer" element={<EditAcaOfficer />} />
+
+        <Route
+          path="/ManageAcaOfficer/EditAcaOfficer/AcaOffInfo"
+          element={<AcaOffInfo />}
+        />
+
+        {/* <Route path="/ManageAcaOfficer/viewAcaOfficer" element={<ViewAcaOfficer />} />
+        <Route
+          path="/ManageAcaOfficer/viewAcaOfficer/SearchResult"
+          element={<AcaOffInfo />}
+        /> */}
 
       </Routes>
     </BrowserRouter>
