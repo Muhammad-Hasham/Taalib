@@ -78,6 +78,7 @@ exports.updateByEmployeeId = async (req, res) => {
   }
 };
 
+
 // Deleting a specific Academic Officer by employeeId
 exports.deleteByEmployeeId = async (req, res) => {
   try {

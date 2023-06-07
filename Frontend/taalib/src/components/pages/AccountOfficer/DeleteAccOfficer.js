@@ -3,7 +3,7 @@ import NavBar from "../nav";
 import SideBar from "../sideBar";
 import DeleteForm from "./DeleteForm";
 
-function DeleteStudent() {
+function DeleteAccOfficer() {
   return (
     <div>
       <NavBar />
@@ -21,4 +21,4 @@ function DeleteStudent() {
   );
 }
 
-export default DeleteStudent;
+export default DeleteAccOfficer;
