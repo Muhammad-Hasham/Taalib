@@ -75,25 +75,23 @@ exports.findOne = async (req, res) => {
 // Updating a teacher by employeeId
 exports.updateByEmployeeId = async (req, res) => {
   try {
-    const { name, email, employeeId, password } = req.body;
+    const { name, email, password, employeeId } = req.body;
 
-    const updatedTeacher = await Teacher.findOneAndUpdate(
-      { employeeId: req.params.employeeId },
-      {
-        name,
-        email,
-        password,
-      },
-      { new: true }
-    );
+    const officer = await Teacher.findOne({ employeeId: req.params.employeeId });
 
-    if (!updatedTeacher) {
+    if (!officer) {
       return res.status(404).json({ message: "Teacher not found" });
     }
 
-    res.json({ message: "Teacher updated successfully", data: updatedTeacher });
+    officer.name = name;
+    officer.email = email;
+    officer.password = password;
+
+    const updatedOfficer = await officer.save();
+
+    res.json({ message: "Teacher updated successfully", data: updatedOfficer });
   } catch (error) {
-    console.error(error);
+    console.log(error);
     res.status(500).json({ message: "Something went wrong" });
   }
 };
