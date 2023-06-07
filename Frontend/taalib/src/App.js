@@ -26,6 +26,7 @@ import RegisterTeacher from "./components/pages/Teacher/registerTeacher";
 import TeacherInfo from "./components/pages/Teacher/TeacherInfo";
 import DeleteTeacher from "./components/pages/Teacher/DeleteTeacher";
 import TeacherDelete from "./components/pages/Teacher/delete";
+import EditTeacher from "./components/pages/Teacher/editTeacher";
 
 function App() {
   return (
@@ -104,6 +105,12 @@ function App() {
         <Route path="/ManageTeacher/DeleteTeacher" element={<DeleteTeacher />} />
         <Route path="/ManageTeacher/DeleteTeacher/TeacherInfo" element={<TeacherDelete />} />
 
+        <Route path="/ManageTeacher/EditTeacher" element={<EditTeacher />} />
+
+        <Route
+          path="/ManageTeacher/EditTeacher/TeacherInfo"
+          element={<TeacherInfo />}
+        />
       </Routes>
     </BrowserRouter>
   );
