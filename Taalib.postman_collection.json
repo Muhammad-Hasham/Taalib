@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "f6248cab-860a-4b37-8d94-f2f4c16371b7",
+		"name": "Taalib",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27410802"
+	},
+	"item": [
+		{
+			"name": "Super Admin Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\":\"hasham\",\r\n  \"email\":\"hasham@gmail.com\",\r\n  \"password\":\"12345\",\r\n  \"firstName\":\"Hasham\",\r\n  \"lastName\":\"Ul Haq\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/superadmin/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"superadmin",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Super Admin Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\":\"hasham@gmail.com\",\r\n  \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/superadmin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"superadmin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Academic Officer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Joe West\",\r\n  \"email\": \"joewest@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/academicofficer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academicofficer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Academic Officers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/academicofficer/allacademicofficers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academicofficer",
+						"allacademicofficers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Academic Officer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Smith Jordon\",\r\n  \"email\": \"smith@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/academicofficer/update/64623d36a3cedeb855a39cf7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academicofficer",
+						"update",
+						"64623d36a3cedeb855a39cf7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve an Academic Officer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/academicofficer/retrieve/64623d36a3cedeb855a39cf7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academicofficer",
+						"retrieve",
+						"64623d36a3cedeb855a39cf7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Academic Officer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/academicofficer/delete/64623d36a3cedeb855a39cf7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academicofficer",
+						"delete",
+						"64623d36a3cedeb855a39cf7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account Officer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Iris Allen\",\r\n  \"email\": \"Iris@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accountofficer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accountofficer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Account Officers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/accountofficer/allaccountofficers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accountofficer",
+						"allaccountofficers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Officer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Barry Joe\",\r\n  \"email\": \"barryjoe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accountofficer/update/64624024a3cedeb855a39d03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accountofficer",
+						"update",
+						"64624024a3cedeb855a39d03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve an Account Officer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accountofficer/retrieve/64624024a3cedeb855a39d03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accountofficer",
+						"retrieve",
+						"64624024a3cedeb855a39d03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account Officer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accountofficer/delete/64624024a3cedeb855a39d03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accountofficer",
+						"delete",
+						"64624024a3cedeb855a39d03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Teacher",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ali Ahmad\",\r\n  \"email\": \"ali@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Teachers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/allteachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"allteachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Teacher",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ahmad Ali\",\r\n  \"email\": \"ahmad@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/update/646245b6a3cedeb855a39d1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"update",
+						"646245b6a3cedeb855a39d1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a Teacher",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/retrieve/646245b6a3cedeb855a39d1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"retrieve",
+						"646245b6a3cedeb855a39d1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyM2I4ZGEzY2VkZWI4NTVhMzljZjQiLCJyb2xlIjoiU3VwZXJBZG1pbiIsImlhdCI6MTY4NDE1OTYxOSwiZXhwIjoxNjg0MjQ2MDE5fQ.Paide4wP-7lHBtiml7NmT9HOf3cLYFZIf_JQSWtUlj0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/delete/646245b6a3cedeb855a39d1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"delete",
+						"646245b6a3cedeb855a39d1a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
