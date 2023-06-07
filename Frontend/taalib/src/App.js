@@ -11,9 +11,12 @@ import AccOffDelete from "./components/pages/AccountOfficer/delete";
 import EditAccOfficer from "./components/pages/AccountOfficer/editAccOfficer";
 import ViewAccOfficer from "./components/pages/AccountOfficer/viewAccOfficer";
 
+///////////////////////////////////////////////////////////////////////////////////////////
 import ManageAcaOfficer from "./components/pages/AcademicOfficer/AcaOffmanageScreen";
 import RegisterAcaOfficer from "./components/pages/AcademicOfficer/registerAcaOfficer";
 import AcaOffInfo from "./components/pages/AcademicOfficer/AcaOffInfo";
+import DeleteAcaOfficer from "./components/pages/AcademicOfficer/DeleteAcaOfficer";
+import AcaOffDelete from "./components/pages/AcademicOfficer/delete";
 
 function App() {
   return (
@@ -60,6 +63,9 @@ function App() {
           path="/ManageAcaOfficer/RegisterAcaOfficer/AcaOffInfo"
           element={<AcaOffInfo />}
         />
+
+        <Route path="/ManageAcaOfficer/DeleteAcaOfficer" element={<DeleteAcaOfficer />} />
+        <Route path="/ManageAcaOfficer/DeleteAcaOfficer/AcaOffInfo" element={<AcaOffDelete />} />
 
       </Routes>
     </BrowserRouter>
